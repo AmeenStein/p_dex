@@ -1,0 +1,237 @@
+/* Global styles */
+* {
+    font-family: Arial Rounded MT Bold;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+/* Utility classes */
+.hover_help {
+    cursor: help;
+}
+
+.full_width_table {
+    width: 100%;
+}
+
+.pokeball_li {
+    list-style-image: url('file:///C:/Users/Martin%20Stein/OneDrive/Desktop/Ameen/Web/Pokedex/Images/Favicon-pokeball.ico');
+}
+
+.picture_frame {
+    border: 15px #ad484a;
+    border-style: ridge;
+}
+
+.padding_15px {
+    padding: 15px;
+}
+
+.image_size {
+    width: 100px;
+    height: 100px;
+}
+
+.image_size_250px {
+    width: 250px;
+    height: 250px;
+}
+
+.sticky {
+    position: sticky;
+    top: 0;
+    padding: 5px;
+    background-color: #ffffff;
+    z-index: 1;
+}
+
+.float_img {
+    float: left;
+}
+
+.float_R {
+    float: right;
+}
+
+.clearfix {
+    overflow: auto;
+}
+
+.picture_frame {
+    border: 15px #ad484a;
+    border-style: ridge;
+}
+
+.darkmode {
+    background-color: #333;
+}
+
+.darkmode_button {
+    color: white;
+    padding: 15px;
+    background-color: #333;
+}
+
+.create_button {
+    color: white;
+    background-color: #333;
+}
+
+/* Navigation styles */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: #111;
+    color: red;
+}
+
+.active {
+    background-color: red;
+}
+
+.padding {
+    padding: 10px;
+}
+
+.margin {
+    margin: 25px;
+}
+
+.nav li {
+    display: inline-block;
+    font-size: 20px;
+}
+
+.less {
+    display: none;
+}
+
+.more:hover {
+    display: block;
+    background-color: #00ffff;
+    padding: 20px;
+}
+
+/* Dropdown menu styles */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    border: none;
+}
+
+.dropdown-content::first-letter {
+    font-size: 20px;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: inline;
+}
+
+.desc {
+    padding: 15px;
+    text-align: center;
+}
+
+
+/* Input styles 
+input {
+    width: 50px;
+    border: none;
+    border-bottom: 4px solid darkred;
+    color: white;
+    background-color: #222;
+    outline: none;
+    transition: width 0.8s ease-in-out;
+}
+
+input:focus {
+    width: 150px;
+    color: white;
+    border: none;
+    border-bottom: 4px solid red;
+}
+*/
+
+
+.flashy_inputs{
+    width: 125px;
+    border: none;
+    border-bottom: 4px solid #cf9fff;
+    color: white;
+    background-color: #999;
+    outline: none;
+    transition: width 0.8s ease-in-out;
+}
+
+.flashy_inputs:focus{
+    width: 175px;
+    color: white;
+    background-color: #777;
+    border: none;
+    border-bottom: 4px solid #bf40bf;
+}
+
+/* Footer styles */
+.footer {
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+}
+
+/* Text shadow */
+.text_shadow {
+    color: white;
+
+}
+
+
+
+/* Type background colors */
+.white{background-color:#ffffff}
+.type_Bug{background-color:#a6b91a}
+.type_Dark{background-color:#705746}
+.type_Dragon{background-color:#6f35fc}
+.type_Electric{background-color:#f7d02c}
+.type_Fairy{background-color:#d685ad}
+.type_Fighting{background-color:#c22e28}
+.type_Fire{background-color:#ee8130}
+.type_Flying{background-color:#a98ff3}
+.type_Ghost{background-color:#735797}
+.type_Grass{background-color:#7ac74c}
+.type_Ground{background-color:#e2bf65}
+.type_Ice{background-color:#96d9d6}
+.type_Normal{background-color:#a8a77a}
+.type_Poison{background-color:#a33ea1}
+.type_Psychic{background-color:#f95587}
+.type_Rock{background-color:#b6a136}
+.type_Steel{background-color:#b7b7ce}
+.type_Water{background-color:#6390f0}
