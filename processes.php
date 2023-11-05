@@ -55,4 +55,50 @@
             print "Failed: " . $conn->error;
         }
     }
+
+    $output = '';
+    if(isset($POST["export_data_from_pokemon_table"]))
+    {
+        $query = "SELECT * FROM pokemon";
+        $result = mysqli_query($conn, $query);
+        if(mysqli_num_rows($result) > 0)
+        {
+            $output .= '
+            <table class="table" bordered="1">
+                <tr>
+                    <th scope="col">Dex_Number</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">dex_entry</th>
+                    <th scope="col">size</th>
+                    <th scope="col">weight</th>
+                    <th scope="col">habitat</th>
+                    <th scope="col">evolution</th>
+                </tr>
+            ';
+            while($row = mysqli_fetch_array($result))
+            {
+                $output .= '
+                    <tr>
+                        <td>'.$row["Dex_Number"].'</td>
+                        <td>'.$row["Type"].'</td>
+                        <td>'.$row["Name"].'</td>
+                        <td>'.$row["dex_entry"].'</td>
+                        <td>'.$row["size"].'</td>
+                        <td>'.$row["weight"].'</td>
+                        <td>'.$row["habitat"].'</td>
+                        <td>'.$row["evolution"].'</td>
+                    </tr>
+            ';
+            }
+            $output .='</table>';
+            header('Content-Type: application/xls');
+            header('Content-Disposition: attachment; filename=pokemon_table.xls');
+            echo $output;
+        }
+        else{
+            header("Location: index.php?msg=no_data_found");
+                exit();
+        }
+    }
 ?>

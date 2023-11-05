@@ -45,6 +45,9 @@ $result = mysqli_query($conn, $sql);
         <input type="file" name="file">
         <button name="import_data">import data</button>
     </form>
+    <form method="post" action="processes.php">
+        <input type="submit" name="export_data_from_pokemon_table" value="export_list">
+    </form>
 </div>
 
 <h1>Kanto Pokedex</h1>
